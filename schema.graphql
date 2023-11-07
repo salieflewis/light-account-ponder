@@ -1,4 +1,5 @@
-type ExampleEntity @entity {
+type Account @entity {
   id: String!
-  name: String!
+  owner: String!
+  address: String!
 }

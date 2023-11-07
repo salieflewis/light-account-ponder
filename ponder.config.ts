@@ -16,13 +16,13 @@ export const config: Config = {
       abi: "./abis/LightAccount.json",
       factory: {
         // The address of the factory contract that creates instances of this child contract.
-        address: "0x20f2708b85292e0d90cd43c22f292b39232f1e5d",
+        address: "0x00006B00f8Ee98Eb4eA288B1E89d00702361e055",
         // The event emitted by the factory that announces a new instance of this child contract.
-        event: parseAbiItem("event LightAccountCreated(address indexed owner, address indexed accountAddress)"),
+        event: parseAbiItem("event LightAccountCreated(address indexed deployedAddress, uint256 salt)"),
         // The name of the parameter that contains the address of the new child contract.
-        parameter: "accountAddress",
+        parameter: "deployedAddress",
       },
-      startBlock: 16939705,
+      startBlock: 16975984,
     },
   ],
 };
