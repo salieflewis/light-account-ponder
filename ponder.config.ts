@@ -24,5 +24,12 @@ export const config: Config = {
       },
       startBlock: 16975984,
     },
+    {
+      name: "LightAccountFactory",
+      network: "optimism-goerli",
+      abi: "./abis/LightAccountFactory.json",
+      address: "0x00006B00f8Ee98Eb4eA288B1E89d00702361e055",
+      startBlock: 16975984
+    }
   ],
 };
